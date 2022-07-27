@@ -5,7 +5,7 @@
         <div class="container">
           <div class="row pt-5 d-flex flex-row">
             <div class="col-md-3">
-              <img src="{{ asset('storage/'. $about->foto) }}" alt="" style="max-width: 300px" />
+              <img src="{{ Storage::url($about->foto) }}" alt="" style="max-width: 300px" />
             </div>
             <div class="col-md-9">
               <h1>About Us</h1>

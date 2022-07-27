@@ -10,7 +10,7 @@
     @foreach($programs as $program)
       <div class="row mt-5">
         <div class="col text-center">
-          <img src="{{ asset('storage/' . $program->foto) }}" class="rounded-5" width="350" alt="" />
+          <img src="{{ Storage::url($program->foto) }}" class="rounded-5" width="350" alt="" />
         </div>
         <div class="col my-auto">
           <div class="container">

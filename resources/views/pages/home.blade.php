@@ -58,7 +58,7 @@
           <div class="col-md-4">
             <div class="card border-light rounded-3" style="width: 18rem">
               <div class="card-body">
-                <img src="{{ asset('storage/'. $testimoni->foto) }}" width="80" class="m-4 rounded-circle" alt="..." />
+                <img src="{{ Storage::url($testimoni->foto) }}" width="80" class="m-4 rounded-circle" alt="..." />
                 <h5 class="fw-bold">{{ $testimoni->nama }}</h5>
                 <p class="card-text fw-light mt-3">{{ $testimoni->komentar }}</p>
               </div>
@@ -77,8 +77,8 @@
       <div id="mainCarousel" class="carousel w-10/12 max-w-xl mx-auto mt-3">
         <div class="carousel_slide grid grid-cols-2 gap-5">
       @foreach ($galeris as $galeri)
-          <a href="{{ asset('storage/' . $galeri->foto) }}" class="my-5" data-fancybox="gallery">
-            <img src="{{ asset('storage/' . $galeri->foto) }}" style="max-width: 350px; height: 250px; margin: 10px;" />
+          <a href="{{ Storage::url($galeri->foto) }}" class="my-5" data-fancybox="gallery">
+            <img src="{{ Storage::url($galeri->foto) }}" style="max-width: 350px; height: 250px; margin: 10px;" />
           </a>
           @endforeach
         </div>
