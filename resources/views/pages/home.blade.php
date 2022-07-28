@@ -21,7 +21,7 @@
           </div> -->
 
           <div class="col-md-6 text-center p-5">
-            <img src="{{ asset('storage/'. $home->foto) }}" class="rounded-5 mx-6" width="500" style="width: 100%" alt="" />
+            <img src="{{ Storage::url($home->foto) }}" class="rounded-5 mx-6" width="500" style="width: 100%" alt="" />
           </div>
           
         </div>
