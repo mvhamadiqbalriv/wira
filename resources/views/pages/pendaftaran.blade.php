@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Pendaftaran Arya Gamma Academy</title>
 </head>
 <body>
     
-    <div id="container_1">
+    <div id="container_1" class="container">
   
         <h1 id="title">
         Arya Gamma Academy
@@ -20,14 +21,14 @@
     </div><!---container_1--->
     <form   method="post" action="/pendaftaran" enctype="multipart/form-data">
       @csrf
-      <div id="container_2">
+      <div id="container_2" class="container">
         <br id="survey-form">
         <label id="email-label">Email</label>
-              <input type="email" id="email" name="email" class="form" required placeholder="Email"><br><!---email-->
+              <input type="email" id="email" name="email" class="form-control" required placeholder="Email"><br><!---email-->
         <label id="name-label">Name</label>
-            <input type="text" id="nama" name="nama" class="form" required placeholder="Nama"><br><!--name--->
+            <input type="text" id="nama" name="nama" class="form-control" required placeholder="Nama"><br><!--name--->
         <label id="name-label">Tempat, Tanggal Lahir</label>
-            <input type="text" id="tempat_tanggal" name="tempat_tanggal" class="form" required placeholder="Tempat Tanggal Lahir"><br><!--Tempat Tanggal Lahir--->    
+            <input type="text" id="tempat_tanggal" name="tempat_tanggal" class="form-control" required placeholder="Tempat Tanggal Lahir"><br><!--Tempat Tanggal Lahir--->    
         <p>Jenis Kelamin</p>
             <label>
               <input type="radio" name="jenis_kelamin" value="Laki-Laki">Laki-Laki
@@ -38,18 +39,18 @@
             <br>
             <br>
         <label id="name-label">Alamat</label>
-            <input type="text" id="alamat" name="alamat" class="form" required placeholder="Tempat Tanggal Lahir"><br><!--Alamat--->
+            <input type="text" id="alamat" name="alamat" class="form-control" required placeholder="Tempat Tanggal Lahir"><br><!--Alamat--->
         <label id="name-label">NO HP</label>
-            <input type="text" id="no_hp" name="no_hp" class="form" required placeholder="No Hp"><br><!--No Hp--->
+            <input type="text" id="no_hp" name="no_hp" class="form-control" required placeholder="No Hp"><br><!--No Hp--->
         <label id="name-label">Nama Orang Tua</label>
-            <input type="text" id="nama_ortu" name="nama_ortu" class="form" required placeholder="Nama Orang Tua"><br><!--Nama Orang tua--->
+            <input type="text" id="nama_ortu" name="nama_ortu" class="form-control" required placeholder="Nama Orang Tua"><br><!--Nama Orang tua--->
         <label id="name-label">Pekerjaan Orang Tua</label>
-            <input type="text" id="pekerjaan_ortu" name="pekerjaan_ortu" class="form" required placeholder="Pekerjaan Orang Tua"><br><!--Pekerjaan Orang tua--->
+            <input type="text" id="pekerjaan_ortu" name="pekerjaan_ortu" class="form-control" required placeholder="Pekerjaan Orang Tua"><br><!--Pekerjaan Orang tua--->
         <label id="name-label">No Hp Orang Tua</label>
-            <input type="text" id="no_ortu" name="no_ortu" class="form" required placeholder="No Hp Orang Tua"><br><!--No Hp orang tua--->
+            <input type="text" id="no_ortu" name="no_ortu" class="form-control" required placeholder="No Hp Orang Tua"><br><!--No Hp orang tua--->
           </label>
           <label id="name-label">Pilih Program Pembelajaran</label>
-          <select id="program" name="program" required>
+          <select id="program" class="form-control" name="program" required>
             <option disabled selected value>
               Program Pembelajaran
             </option>
